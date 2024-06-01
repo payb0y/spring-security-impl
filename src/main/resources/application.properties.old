@@ -1,0 +1,31 @@
+# MySQL JDBC URL
+spring.datasource.url=jdbc:mysql://localhost:3306/employes
+#spring.datasource.url=jdbc:mysql://localhost:3306/documents
+
+# MySQL username
+spring.datasource.username=root
+# MySQL password
+spring.datasource.password=root0000
+
+# Hibernate properties
+# spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# Maximum number of connections in the pool
+spring.datasource.hikari.maximum-pool-size=5
+
+# Minimum number of idle connections in the pool
+spring.datasource.hikari.minimum-idle=2
+
+# Show SQL queries in the console
+spring.jpa.show-sql=true
+
+# Enable SQL query formatting in console output
+spring.jpa.properties.hibernate.format_sql=true
+
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto=update
+
+hibernate.transaction.jta.platform=com.example.CustomJtaPlatform
+
+Server.error.include-message=always
